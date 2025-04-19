@@ -1,3 +1,8 @@
 export default function Home() {
-    return <h1>Welcome to the Home Page</h1>;
+    return (
+    <main> 
+      <h1>Łukasz Witkowski</h1>
+      <p>Wannabe dev</p>
+    </main>
+    );
   }

@@ -1,3 +1,7 @@
 export default function Contact() {
-    return <h1>Welcome to the Home Page</h1>;
+  return (
+    <div>
+      <h1>Contact info</h1>
+    </div>
+  );
   }
