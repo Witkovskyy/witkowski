@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from "../styles/Repos.module.css";
 
 const GitHubRepos = () => {
   const [repos, setRepos] = useState([]);
@@ -18,12 +19,13 @@ const GitHubRepos = () => {
   return (
     <div>
       <h2>My projects</h2>
-      <ul>
+      <ul className={styles.listparent}>
         {repos.slice(0,4).map((repo) => (
-          <li key={repo.id}>
-            <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+          <li key={repo.id} className={styles.repo_item_container}>
+            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className={styles.list_item}>
               {repo.name}
             </a>
+            <p>{repo.description}</p>
           </li>
         ))}
       </ul>

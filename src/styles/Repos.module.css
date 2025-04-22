@@ -1,0 +1,21 @@
+.listparent{
+    display: grid;
+    max-width: 30vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.repo_item_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    border: solid rgb(51, 53, 65) 4px;
+    border-radius: 10%;
+    min-height: 40px;
+    justify-content: center;
+    padding: 5px;
+}
+.list_item{
+    display: flex;
+    justify-content: center;
+}
