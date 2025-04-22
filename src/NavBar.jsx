@@ -1,20 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { Routes, Route, Link } from 'react-router-dom';
 import Home from './subpages/Home';
 import About from './subpages/About';
 import Contact from './subpages/Contact';
 import Portfolio from './subpages/Portfolio'
-import './NavBar.css';
+import styles from './styles/NavBar.module.css';
 
 function NavBar(){
     return (
-        <div>
-            <nav>
-                <Link to="/">Home page</Link>
-                <Link to="/portfolio">Portfolio</Link>
-                <Link to="/about">About me</Link>
-                <Link to="contact">Contact</Link>
+        <div className={styles.navbarContainer}>
+            <nav className={styles.navbar}>
+                <Link to="/" className='navbarItem'>Home page</Link>
+                <Link to="/portfolio" className='navbarItem'>Portfolio</Link>
+                <Link to="/about" className='navbarItem'>About me</Link>
+                <Link to="contact" className='navbarItem'>Contact</Link>
             </nav>
 
         <Routes>
