@@ -1,8 +1,10 @@
+import styles from "../styles/Home.module.css";
+
 export default function Home() {
     return (
-    <main> 
-      <h1>Łukasz Witkowski</h1>
-      <p>Wannabe software developer</p>
+    <main className={styles.contentContainer}> 
+      <h1 className={styles.title}>Łukasz Witkowski</h1>
+      <p>20 years old software developer wannabe</p>
     </main>
     );
   }

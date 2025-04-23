@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
-.repo_item_container{
+.repoItemContainer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -12,10 +12,17 @@
     border: solid rgb(51, 53, 65) 4px;
     border-radius: 10%;
     min-height: 40px;
+    min-width: 200px;
     justify-content: center;
     padding: 5px;
 }
-.list_item{
+.listItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.repoContainerParent{
+    width: 100%;
     display: flex;
     justify-content: center;
 }

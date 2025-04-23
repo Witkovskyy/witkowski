@@ -10,10 +10,10 @@ function NavBar(){
     return (
         <div className={styles.navbarContainer}>
             <nav className={styles.navbar}>
-                <Link to="/" className='navbarItem'>Home page</Link>
-                <Link to="/portfolio" className='navbarItem'>Portfolio</Link>
-                <Link to="/about" className='navbarItem'>About me</Link>
-                <Link to="contact" className='navbarItem'>Contact</Link>
+                <Link to="/" className={styles.navbarItem}>Home page</Link>
+                <Link to="/portfolio" className={styles.navbarItem}>Portfolio</Link>
+                <Link to="/about" className={styles.navbarItem}>About me</Link>
+                <Link to="contact" className={styles.navbarItem}>Contact</Link>
             </nav>
 
         <Routes>

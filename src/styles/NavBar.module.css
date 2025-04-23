@@ -15,6 +15,9 @@ body{
     background-color: #242424;
 }
 .navbarItem, .navbarItem:link, .navbarItem:visited{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
     padding: 10px;
     margin: 0px;
     text-decoration: none !important;
@@ -23,4 +26,19 @@ a{
     text-decoration: none;
     margin: 5px;
     color: white;
+}
+  
+.navbarItem::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: #003ba0;
+    transition: width 0.3s ease;
+}
+  
+.navbarItem:hover::after {
+    width: 100%;
 }

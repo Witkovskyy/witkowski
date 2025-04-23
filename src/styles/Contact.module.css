@@ -1,0 +1,31 @@
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.socialLinksContainer{
+    display: flex;
+    flex-direction: row;
+}
+.socialLinks{
+    display: block;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #515151;
+    text-decoration: none;
+    color: #222;
+    transition: box-shadow 0.3s ease;
+}
+.socialLinks:hover{
+    box-shadow: 0 5px 12px rgba(204, 203, 203, 0.1);
+}
+
+.gitLink{
+    color: rgb(44, 169, 223);
+}
+
+.inLink{
+    color: rgb(80, 218, 233);
+}

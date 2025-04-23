@@ -17,15 +17,14 @@ const GitHubRepos = () => {
   }, []);
 
   return (
-    <div>
-      <h2>My projects</h2>
+    <div className={styles.repoContainerParent}>
       <ul className={styles.listparent}>
         {repos.slice(0,4).map((repo) => (
-          <li key={repo.id} className={styles.repo_item_container}>
-            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className={styles.list_item}>
-              {repo.name}
-            </a>
+          <li key={repo.id} className={styles.repoItemContainer}>
+            <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className={styles.listItem}>
+              {(repo.name).replace(/_/g, " ")}
             <p>{repo.description}</p>
+            </a>
           </li>
         ))}
       </ul>
