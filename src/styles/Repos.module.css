@@ -9,8 +9,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
-    border: solid rgb(51, 53, 65) 4px;
-    border-radius: 10%;
+    border: solid rgb(51, 53, 65) 6px;
+    border-radius: 10px;
     min-height: 40px;
     min-width: 200px;
     justify-content: center;

@@ -5,6 +5,7 @@
     align-items: center;
 }
 .socialLinksContainer{
+    margin: 2px;
     display: flex;
     flex-direction: row;
 }
@@ -19,11 +20,11 @@
     transition: box-shadow 0.3s ease;
 }
 .socialLinks:hover{
-    box-shadow: 0 5px 12px rgba(204, 203, 203, 0.1);
+    box-shadow: 0 6px 12px rgba(204, 203, 203, 0.1);
 }
 
 .gitLink{
-    color: rgb(44, 169, 223);
+    color: rgb(255, 255, 255);
 }
 
 .inLink{

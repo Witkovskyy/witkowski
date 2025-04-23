@@ -22,7 +22,7 @@ function ContactForm() {
             <input type="email" placeholder="Mail" value={email} onChange={(e) => setEmail(e.target.value)} />
             <textarea type="text" rows="8" placeholder="Your message" value={message} onChange={(e) => setMessage(e.target.value)} />
             {/* <ReCAPTCHA sitekey="site-key" ref={recaptchaRef}/> */}
-            <button type="submit">Submit</button>
+            <button type="submit" className={styles.submitButton}>Submit</button>
         </form>
 
     );
