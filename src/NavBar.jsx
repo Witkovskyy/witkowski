@@ -15,7 +15,7 @@ function NavBar(){
         
         <div className={styles.navbarContainer}>
             <nav className={styles.navbar}>
-                <img src="/public/favicon.ico" className={styles.logo}></img>
+                <img src="favicon.ico" className={styles.logo}></img>
                 <Link to="/" className={styles.navbarItem}>Home page</Link>
                 <Link to="/portfolio" className={styles.navbarItem}>Portfolio</Link>
                 <Link to="/about" className={styles.navbarItem}>About me</Link>
