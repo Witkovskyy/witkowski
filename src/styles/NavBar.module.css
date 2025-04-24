@@ -8,8 +8,10 @@ body{
     margin: 0;
 }
 .navbar{
+    display: flex;
     min-width: 50vw;
-    min-height: 40px;
+    height: 10vh;
+    max-height: 40px;
     margin:0;
     padding: 10px;
     background-color: #242424;
@@ -41,4 +43,9 @@ a{
   
 .navbarItem:hover::after {
     width: 100%;
+}
+
+nav .logo{
+    height: 100%;
+    margin-right: 5px;
 }
