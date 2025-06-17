@@ -19,7 +19,7 @@ const GitHubRepos = () => {
   return (
     <div className={styles.repoContainerParent}>
       <ul className={styles.listparent}>
-        {repos.slice(0,4).map((repo) => (
+        {repos.slice(0,8).map((repo) => (
           <li key={repo.id} className={styles.repoItemContainer}>
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className={styles.listItem}>
               {(repo.name).replace(/_/g, " ")}
