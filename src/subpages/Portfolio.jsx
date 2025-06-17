@@ -22,8 +22,8 @@ export default function Portfolio() {
         <h1>My projects</h1>
         <GitHubRepos/>
         <p>My CV's (Polish and English) </p>
-        <a href="/public/Łukasz Witkowski CV - English.pdf">English</a>
-        <a href="/public/Lukasz_Witkowski_CV_24_04_2025.pdf">Polish</a>
+        <a href="/Łukasz Witkowski CV - English.pdf">English</a>
+        <a href="/Lukasz_Witkowski_CV_24_04_2025.pdf">Polish</a>
       </motion.div>
     );
   }
