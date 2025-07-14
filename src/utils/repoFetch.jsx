@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Repos.module.css";
+import { motion } from "framer-motion";
 
 const GitHubRepos = () => {
   const [repos, setRepos] = useState([]);
@@ -19,20 +20,29 @@ const GitHubRepos = () => {
 
   return (
     <div className={styles.repoContainerParent}>
-      <ul className={styles.listparent}>
+      <motion.ul 
+      initial={{scale: 0}}
+      animate={{scale: 1}}
+      transition={{delay: 0.5, duration: 1}}
+      
+      className={styles.listparent}>
         {repos.slice(0,8).map((repo) => (
           <li key={repo.id} className={styles.repoItemContainer}>
             <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className={styles.listItem}>
               
                 <p className={styles.itemName}> 
-                  {(repo.name).replace(/_/g, " ")}
+                  {
+                  (repo.name)
+                  .replace(/_/g, " ")
+                  .replace(/^./, str => str.toUpperCase())
+                  }
                 </p>
               
             <p className={styles.itemDescription}>{repo.description}</p>
             </a>
           </li>
         ))}
-      </ul>
+      </motion.ul>
     </div>
   );
 };
