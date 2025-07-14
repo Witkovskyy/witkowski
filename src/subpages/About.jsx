@@ -19,11 +19,15 @@ export default function About() {
       className={styles.contentContainer}>
 
       <h1>Hi, it's great to see you here!</h1>
-      <p className={styles.paragraph}>
+      <motion.p 
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      transition={{delay: 0.5, duration: 1}}
+      className={styles.paragraph}>
         My name is Łukasz. I'm currently stydying computer science at PUT Poznań.
         Your average Unity enjoyer. Trying to make it into the bussiness.
         Apart from IT, I'm a music and sports geek.
-      </p>
+      </motion.p>
     </motion.div>
   );
   }

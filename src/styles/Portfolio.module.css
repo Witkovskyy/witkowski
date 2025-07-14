@@ -7,3 +7,9 @@
 .portfolioHeader {
     font-size: 2rem;
 }
+.cv_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

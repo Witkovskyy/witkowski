@@ -20,7 +20,14 @@ export default function Home() {
 
 
       <h1 className={styles.title}>Łukasz Witkowski</h1>
-      <p>20 years old software developer wannabe</p>
+      <motion.p
+      initial={{scale: 0}}
+      animate={{scale: 1}}
+      transition={{delay: 0.5, duration: 1}}
+      >
+
+        21 years old software developer wannabe
+      </motion.p>
       </motion.div>
     );
   }

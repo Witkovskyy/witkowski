@@ -1,15 +1,29 @@
+.contact_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    width: 40%;
+    min-height: 100px;
+    min-width: 50px;
+    margin: 10px;
+    padding: 0;
+}
+
 .contact_form{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 200px;
-    width: 30%;
+    width: 40%;
     min-height: 100px;
     min-width: 50px;
+    margin: 0;
 }
 .submitButton{
-    width: 50%;
+    width: 65%;
     margin: 3px;
+    min-width: 40%
 }
 form{
     height: 200px;
@@ -21,5 +35,8 @@ input, textarea{
 @media (orientation: portrait){
     input, textarea {
         min-width: 120px;
+    }
+    button {
+        min-width: 40px;
     }
 }

@@ -27,7 +27,7 @@ export default function Contact() {
         <a href="https://github.com/Witkovskyy" target="_blank" rel="noopener noreferrer" className={`${styles.socialLinks} ${styles.gitLink}`}>
         GitHub</a>
       </p>
-      <p>In progress ;) I accept contact via LinkedIn.</p>
+      {/* <p>In progress ;) I accept contact via LinkedIn.</p> */}
       <ContactForm />
     </motion.div>
   );

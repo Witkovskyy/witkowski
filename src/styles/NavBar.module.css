@@ -14,7 +14,7 @@ body{
     max-height: 40px;
     margin:0;
     padding: 10px;
-    background-color: #242424;
+    background-color: #000000;
 }
 .navbarItem, .navbarItem:link, .navbarItem:visited{
     position: relative;
