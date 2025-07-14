@@ -19,7 +19,7 @@ export default function Portfolio() {
             style={{ position: "absolute", width: "100%" }} 
             className={styles.contentContainer}>
 
-        <h1>My projects</h1>
+        <h1 className={styles.portfolioHeader}>My projects</h1>
         <GitHubRepos/>
         <p>My CV's (Polish and English) </p>
         <a href="/Łukasz Witkowski CV - English.pdf">English</a>

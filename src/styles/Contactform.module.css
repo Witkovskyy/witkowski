@@ -18,3 +18,8 @@ input, textarea{
     margin: 3px;
     width: 100%;
 }
+@media (orientation: portrait){
+    input, textarea {
+        min-width: 120px;
+    }
+}

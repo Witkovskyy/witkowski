@@ -49,3 +49,9 @@ nav .logo{
     height: 100%;
     margin-right: 5px;
 }
+
+@media (orientation: portrait){
+    .navbar {
+        max-height: 60px;
+    }
+}

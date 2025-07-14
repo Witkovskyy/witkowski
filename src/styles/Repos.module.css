@@ -16,12 +16,25 @@
     min-height: 40px;
     min-width: 90%;
     justify-content: center;
-    padding: 1px;
+    padding: 0.5px;
 }
 .listItem{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.itemName{
+  font-size: 1.1rem;
+  margin: 0 0 2 0 ;
+}
+.itemDescription{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  font-size: 0.9rem;
 }
 .repoContainerParent{
     width: 100%;
