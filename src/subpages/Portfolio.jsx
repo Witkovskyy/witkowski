@@ -32,12 +32,14 @@ export default function Portfolio() {
           href="/Łukasz Witkowski CV - English.pdf"
           target="_blank"
           rel="noopener noreferrer"
+          className={styles.cvlink}
         >
           English</a>
         <a
           href="/Lukasz_Witkowski_CV_24_04_2025.pdf"
           target="_blank"
           rel="noopener noreferrer"
+          className={styles.cvlink}
         >
           Polish</a>
       </motion.div>

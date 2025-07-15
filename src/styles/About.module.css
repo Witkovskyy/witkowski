@@ -1,14 +1,40 @@
-.paragraph{
+.paragraph {
     max-width: 500px;
 }
-.contentContainer{
+
+.contentContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.subheading {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.skillsList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 20px;
+}
+
+.skillItem {
+    background: rgba(83, 91, 242, 0.2);
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    font-weight: 500;
+    min-width: 50px;
+}
+
 @media (max-width: 600px) {
-    p, h1 {
+
+    p,
+    h1 {
         margin: 30px;
         margin-bottom: 0;
     }

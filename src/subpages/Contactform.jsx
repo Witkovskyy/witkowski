@@ -47,7 +47,7 @@ function ContactForm() {
         <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ delay: 0.5, duration: 0.7 }}
             className={styles.contact_div}
             >
             <form className={styles.contact_form} onSubmit={handleSubmit} >
