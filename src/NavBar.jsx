@@ -14,28 +14,7 @@ const pages = [
         { name: "About", path: "/about" },
         { name: "Contact", path: "/contact" }
     ]
-
-// const [isExit, setIsExit] = useState(true);
-
-// export async function handleExitAnimation() {
-//     setIsExit(true);
-//     return (isExit);
-
-// }
-
 function NavBar(){
-
-
-    // const [[currentPage, direction], setCurrentPage] = useState(0,0);
-
-    // const pageCount = pages.length;
-    // const currentIndex = ((currentPage % pageCount) + pageCount) % pageCount;
-    // // const currentOffer = offers[currentIndex];
-
-    // const paginate = (newDirection) => {
-    //     setCurrentPage([currentPage + newDirection, newDirection]);
-    // };
-
     return (
         
         <div className={styles.navbarContainer}>

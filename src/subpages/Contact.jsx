@@ -44,7 +44,6 @@ export default function Contact() {
           GitHub
         </motion.a>
       </p>
-      {/* <p>In progress ;) I accept contact via LinkedIn.</p> */}
       <ContactForm />
     </motion.div>
   );
