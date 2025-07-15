@@ -1,5 +1,9 @@
+import React, { useEffect } from "react";
 import styles from "../styles/Home.module.css";
-import { motion } from "framer-motion";
+import { animate, motion, AnimatePresence } from "framer-motion";
+import { useMotionValue, useTransform } from "framer-motion";
+import DrawMessage from "../utils/draw";
+// import { handleExitAnimation } from "../NavBar";
 
 const variants = {
   initial: { x: "-100vw", opacity: 0 },
@@ -8,8 +12,22 @@ const variants = {
 };
 
 export default function Home() {
+
+    const count = useMotionValue(0)
+    const rounded = useTransform(() => Math.round(count.get()))
+
+    useEffect(() => {
+        const controls = animate(count, 21, { duration: 3 , delay: 1 })
+        return () => controls.stop()
+    }, [])
+
     return (
+      
+      <AnimatePresence>
+
+      {/* {!handleExitAnimation &&  */}
       <motion.div
+      key="home-page"
       variants={variants}
       initial="initial"
       animate="animate"
@@ -20,7 +38,18 @@ export default function Home() {
 
 
       <h1 className={styles.title}>Łukasz Witkowski</h1>
-      <p>20 years old software developer wannabe</p>
+      <motion.p
+      key="home-message"
+      initial={{scale: 0}}
+      animate={{scale: 1}}
+      transition={{delay: 0.5, duration: 1}}
+      >
+        <motion.span key="age">{rounded}</motion.span> years old software developer wannabe
+      </motion.p>
       </motion.div>
+    {/* } */}
+
+      <DrawMessage/>
+      </AnimatePresence>
     );
   }

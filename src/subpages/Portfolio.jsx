@@ -9,18 +9,40 @@ const variants = {
 };
 
 export default function Portfolio() {
-    return (
-      <motion.div
-            variants={variants}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            style={{ position: "absolute", width: "100%" }} 
-            className={styles.contentContainer}>
+  return (
+    <motion.div
+      variants={variants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      style={{ position: "absolute", width: "100%" }}
+      className={styles.contentContainer}>
 
-        <h1>My projects</h1>
-        <GitHubRepos/>
+      <h1 className={styles.portfolioHeader}>My projects</h1>
+      <GitHubRepos />
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        className={styles.cv_container}
+      >
+        <p>My CV's (Polish and English) </p>
+        <a
+          href="/Łukasz Witkowski CV - English.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.cvlink}
+        >
+          English</a>
+        <a
+          href="/Lukasz_Witkowski_CV_24_04_2025.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.cvlink}
+        >
+          Polish</a>
       </motion.div>
-    );
-  }
+    </motion.div>
+  );
+}
