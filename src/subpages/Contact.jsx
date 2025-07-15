@@ -22,10 +22,27 @@ export default function Contact() {
 
       <h1>Contact info</h1>
       <p className={styles.socialLinksContainer}>
-        <a href="https://www.linkedin.com/in/lukaszwitkowski21" target="_blank" rel="noopener noreferrer" className={`${styles.socialLinks} ${styles.inLink}`}>
-        LinkedIn</a>
-        <a href="https://github.com/Witkovskyy" target="_blank" rel="noopener noreferrer" className={`${styles.socialLinks} ${styles.gitLink}`}>
-        GitHub</a>
+        <motion.a 
+          href="https://www.linkedin.com/in/lukaszwitkowski21" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className={`${styles.socialLinks} ${styles.inLink}`}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.90 }}>
+
+        LinkedIn
+        </motion.a>
+
+        <motion.a 
+          href="https://github.com/Witkovskyy" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className={`${styles.socialLinks} ${styles.gitLink}`}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.90 }}>
+
+          GitHub
+        </motion.a>
       </p>
       {/* <p>In progress ;) I accept contact via LinkedIn.</p> */}
       <ContactForm />

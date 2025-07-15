@@ -26,10 +26,20 @@ export default function Portfolio() {
         animate={{ scale: 1 }}
         transition={{ delay: 1, duration: 1 }}
         className={styles.cv_container}
-        >
+      >
         <p>My CV's (Polish and English) </p>
-        <a href="/Łukasz Witkowski CV - English.pdf">English</a>
-        <a href="/Lukasz_Witkowski_CV_24_04_2025.pdf">Polish</a>
+        <a
+          href="/Łukasz Witkowski CV - English.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          English</a>
+        <a
+          href="/Lukasz_Witkowski_CV_24_04_2025.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Polish</a>
       </motion.div>
     </motion.div>
   );
