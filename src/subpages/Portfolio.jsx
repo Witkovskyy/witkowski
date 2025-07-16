@@ -19,6 +19,7 @@ export default function Portfolio() {
       style={{ position: "absolute", width: "100%" }}
       className={styles.contentContainer}>
 
+
       <h1 className={styles.portfolioHeader}>My projects</h1>
       <GitHubRepos />
       <motion.div

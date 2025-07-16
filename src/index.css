@@ -15,7 +15,16 @@
 }
 #root{
   width: 100vw;
+  background: linear-gradient(60deg, #272727, #0b0b1b, #272727);
+  background-size: 400% 400%;
+  animation: bgShift 12s ease infinite;
 }
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 
 a:hover {

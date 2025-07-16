@@ -17,13 +17,10 @@ const container = {
   }
 };
 const item = {
-  hidden: { y: 20, opacity: 0 },
+  hidden: { y: 200, opacity: 0 },
   show: { y: 0, opacity: 1 }
 };
-
-export default function About() {
-
-  const skills = [
+const skills = [
     { id: 1, name: "JavaScript", percent: 75 },
     { id: 2, name: "TypeScript", percent: 70 },
     { id: 3, name: "React", percent: 70 },
@@ -37,6 +34,9 @@ export default function About() {
     { id: 11, name: "SQL", percent: 60 },
     { id: 12, name: "Unity", percent: 40 },
   ];
+
+export default function About() {
+
 
   return (
     <motion.div

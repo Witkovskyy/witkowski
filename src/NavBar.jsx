@@ -7,13 +7,7 @@ import About from './subpages/About';
 import Contact from './subpages/Contact';
 import Portfolio from './subpages/Portfolio'
 import styles from './styles/NavBar.module.css';
-
-const pages = [
-        { name: "Home", path: "/" },
-        { name: "Portfolio", path: "/portfolio" },
-        { name: "About", path: "/about" },
-        { name: "Contact", path: "/contact" }
-    ]
+import './index.css'; 
 function NavBar(){
     return (
         

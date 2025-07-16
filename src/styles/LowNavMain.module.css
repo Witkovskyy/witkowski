@@ -1,0 +1,20 @@
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 20px;
+}
+.navLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navItem {
+    background: rgba(83, 91, 242, 0.2);
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    font-weight: 500;
+    min-width: 50px;
+}

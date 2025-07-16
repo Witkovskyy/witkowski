@@ -23,7 +23,7 @@
 .submitButton{
     width: 65%;
     margin: 3px;
-    min-width: 40%
+    min-width: 100px;
 }
 form{
     height: 200px;

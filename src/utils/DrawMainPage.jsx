@@ -38,8 +38,18 @@ export default function DrawMessage() {
             height="600"
             viewBox="0 0 1100 600"
             initial="hidden"
-            animate="visible"
+            // animate="visible"
             style={image}
+            animate={ ["visible",
+                {scale: [1, 1.05, 1]},
+            ]}
+            transition={{
+                delay: 2.5,
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "mirror",
+                ease: "easeInOut",
+            }}
         >
             {/* H */}
             <motion.line

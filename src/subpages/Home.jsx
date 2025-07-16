@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import { animate, motion, AnimatePresence } from "framer-motion";
 import { useMotionValue, useTransform } from "framer-motion";
-import DrawMessage from "../utils/draw";
+import DrawMessage from "../utils/DrawMainPage";
+import LowNavMain from "../utils/LowNavMain";
 // import { handleExitAnimation } from "../NavBar";
 
 const variants = {
@@ -36,7 +37,6 @@ export default function Home() {
       style={{ position: "absolute", width: "100%" }} 
       className={styles.contentContainer}> 
 
-
       <h1 className={styles.title}>Łukasz Witkowski</h1>
       <motion.p
       key="home-message"
@@ -47,9 +47,10 @@ export default function Home() {
         <motion.span key="age">{rounded}</motion.span> years old software developer wannabe
       </motion.p>
       </motion.div>
+        <DrawMessage/>
     {/* } */}
-
-      <DrawMessage/>
+      <LowNavMain/>
+      
       </AnimatePresence>
     );
   }
