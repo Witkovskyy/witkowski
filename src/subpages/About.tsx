@@ -1,29 +1,36 @@
 import React from "react";
 import styles from "../styles/About.module.css";
-import { motion } from "framer-motion";
-import SkillBar from "../utils/SkillBar";
-import { iframe } from "framer-motion/client";
+import { motion, Variants } from "framer-motion";
+import SkillBar from "../utils/SkillBar"; // Pamiętaj, żeby też zmienić ten plik na .tsx!
 
-const variants = {
+// Typowanie wariantów animacji
+const variants: Variants = {
   initial: { x: "-100vw", opacity: 0 },
   animate: { x: 0, opacity: 1 },
   exit: { x: "100vw", opacity: 0 },
 };
-const container = {
+
+const container: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: { delayChildren: 1, staggerChildren: 0.2 }
   }
 };
-const item = {
+
+const item: Variants = {
   hidden: { y: 20, opacity: 0 },
   show: { y: 0, opacity: 1 }
 };
 
-export default function About() {
+interface Skill {
+    id: number;
+    name: string;
+    percent: number;
+}
 
-  const skills = [
+export default function About() {
+  const skills: Skill[] = [
     { id: 1, name: "JavaScript", percent: 75 },
     { id: 2, name: "TypeScript", percent: 70 },
     { id: 3, name: "React", percent: 70 },
@@ -54,11 +61,10 @@ export default function About() {
         animate={{ scale: 1 }}
         transition={{ delay: 0.5, duration: 0.7 }}
         className={styles.paragraph}>
-        My name is Łukasz. I'm currently stydying computer science at PUT Poznań.
-        Your average Unity enjoyer. Trying to make it into the bussiness.
+        My name is Łukasz. I'm currently studying computer science at PUT Poznań.
+        Your average Unity enjoyer. Trying to make it into the business.
         Apart from IT, I'm a music and sports geek.
       </motion.p>
-
 
       <h2>My skills</h2>
 
@@ -71,6 +77,7 @@ export default function About() {
         {skills.map((skill) => (
           <motion.li key={skill.id} variants={item} className={styles.skillItem}>
             {skill.name}
+            {/* Upewnij się, że SkillBar przyjmuje prop `percent` typu number */}
             <SkillBar percent={skill.percent} />
           </motion.li>
         ))}
